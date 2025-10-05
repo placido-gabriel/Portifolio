@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portifólio | Plácido Gabriel">
+    <meta property="og:description" content="Portifólio de Plácido Gabriel">
+    <meta property="og:url" content="www.placido-gabriel.github.io/Portifolio">
+    <meta property="og:image" content="assets/images/git-eu.png">
+    <title>Portifólio | Plácido Gabriel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <h1 id="p-logo">Plácido <span>Gabriel</span></h1>
+            <nav id="side-bar">
+                <ul id="side-ul">
+                    <li><i class='bx bx-x' style="font-size: 36px;" onclick="xPressed()"></i></li>
+                    <li><a href="#home" class="h-link">Home</a></li>
+                    <li><a href="#sobre" class="h-link">Sobre</a></li>
+                    <li><a href="#projectos" class="h-link">Projectos</a></li>
+                    <li><a href="#skills" class="h-link">Skills</a></li>
+                    <li><a href="#contactos" class="h-link">Contactos</a></li>
+                </ul>
+            </nav>
+            <nav id="original-nav">
+                <ul>
+                    <li><a href="#home" class="h-link">Home</a></li>
+                    <li><a href="#sobre" class="h-link">Sobre</a></li>
+                    <li><a href="#projectos" class="h-link">Projectos</a></li>
+                    <li><a href="#skills" class="h-link">Skills</a></li>
+                    <li><a href="#contactos" class="h-link">Contactos</a></li>
+                    <li><i class='bx bx-menu' style="font-size: 36px;" onclick="menuPressed()"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="contendo-home">
+                <div class="infor-esquerda">
+                    <h2 id="ola">Olá, eu sou o Plácido</h2>
+                    <h2 id="dev-sites"><span>Desenvolvedor de Sites</span></h2>
+                    <p>A construir a minha jornada em desenvolvimento web front-end, a caminho do full-stack.
+                    </p>
+                    <a href="#contactos" class="btn-link">Contactar</a>
+                </div>
+                <div class="foto-direita">
+                    <img src="assets/images/git-eu.png" alt="Fotografia do Plácido" id="foto-home">
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <img src="assets/images/git-eu.png" alt="Fotografia do Plácido Gabriel" id="foto-minha">
+            <div id="o-sobre">
+                <h2 class="sobre-text">Sobre <span>Mim</span></h2>
+                <p class="sobre-text">Sou estudante de Contabilidade e encontrei na programação uma paixão complementar. A disciplina e a lógica que aplico nos números ajudaram-me a desenvolver uma abordagem estruturada no desenvolvimento web. Actualmente estou a especializar-me em front-end, com o objetivo de evoluir até full-stack.</p>
+                <p class="sobre-text">Tenho interesse em criar soluções práticas e funcionais, valorizando tanto a experiência do utilizador como a eficiência e a acessibilidade do código. O meu objetivo é continuar a aprender e desenvolver projectos que unam criatividade e lógica.</p>
+                <a class="btn-link" id="btn-sobre" href="#projectos">Ver Projectos</a>
+            </div>
+        </section>
+        <section id="projectos">
+            <h2>Projectos</h2>
+
+        </section>
+          <section id="skills">
+            <h2 id>Skills</h2>
+            <h3>Front-end:</h3>
+            <ul id="front-end">
+                <li class="ling"><i class='bx bxl-html5' style="color: #ff5f02dc;"></i>HTML</li>
+                <li class="ling"><i class='bx bxl-css3' style="color: #02b7ffd8;"></i>CSS</li>
+                <li class="ling"><i class='bx bxl-javascript' style="color: #fffb02de;"></i>JS</li>
+            </ul>
+            <h3>Ferramentas:</h3>
+            <ul id="ferramentas">
+                <li class="ling"><img src="assets/icons/figma.png" style="width: 22px; height: 24px;" class="figma-icon" aria-hidden="true">Figma</li>
+                <li class="ling"><i class='bx bxl-github' style='color:#000b3ad3' ></i>GitHub</li>
+                <li class="ling"><i class='bx bxl-visual-studio' style='color:#00b7ffdc' ></i>VScode</li>
+            </ul>
+        </section>
+        <section id="contactos">
+            <h2>Contactos</h2>
+            <fieldset>
+                <legend>Envia-me um email <i class="bx bx-envelope"></i></legend>
+                <form action="https://formspree.io/f/mpwjonqb" method="POST" class="flex-input cor">
+                    <input type="text" placeholder="Nome" name="text" id="text" required class="flex-input cor">
+                    <input type="email" placeholder="Email" name="email" required class="flex-input cor">
+                    <input type="text" name="subject" id="subject" placeholder="Assunto" required class="flex-input cor">
+                    <textarea placeholder="A sua mensagem" name="textarea" required class="flex-input cor"></textarea>
+                    <input name="submit" type="submit" id="submit" class="flex-input">
+                </form>
+            </fieldset>
+            <div>
+                <ul>
+                    <li><a target="_blank" class="h-link"><i class='bx bxl-linkedin-square social-icons'></i></a><li>
+                    <li><a target="_blank" class="h-link"><i class='bx bxl-telegram social-icons'></i></a><li>
+                    <li><a target="_blank" class="h-link"><i class='bx bxl-github social-icons'></i></a><li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div  id="footer">
+            <p>© 2025 Plácido Gabriel. Todos os direitos reservados.</p>
+            <p>Designed & Developed by Plácido Gabriel</p>
+            <ul>
+                <li><a target="_blank" class="h-link"><i class='bx bxl-linkedin-square social-icons'></i></a><li>
+                <li><a target="_blank" class="h-link"><i class='bx bxl-telegram social-icons'></i></a><li>
+                <li><a target="_blank" class="h-link"><i class='bx bxl-github social-icons'></i></a><li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
