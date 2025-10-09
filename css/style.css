@@ -51,8 +51,12 @@ nav,ul{
     margin: 0px;
 }
 
-#p-logo{
+#p-logo, #spanbar{
     font-size: 1.7rem;
+}
+
+#spanbar{
+    font-weight: bold;
 }
 
 span{
@@ -348,15 +352,26 @@ form{
 
 
 @media (max-width: 450px){
+    #spanbar{
+        display: inline-block;
+    }
+    #original-ul{
+        display: flex;
+        justify-content: space-between;
+    }
     .bx-menu{
-        background-color: red;
-        
+        display: flex;
+        align-self: flex-end;
     }
     #p-logo{
-        color: red;
+        display: flex;
+        justify-content: space-between;
     }
     .infor-esquerda #ola, #dev-sites{
         font-size: 1.6rem;
+    }
+    #p-logo, #spanbar{
+    font-size: 1.5rem;
     }
 }
 
