@@ -14,7 +14,7 @@ body{
     background-color: var(--principal);
     color: var(--branco);
     margin: 0px;
-    font-family: poppins,Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     text-align: start;
     min-height: 100vh;
 }
@@ -193,11 +193,12 @@ fieldset{
 section {
     height: 100vh; /* altura igual à altura da janela */
     min-height: 100vh;
-    padding: 15px;
+    padding: 30px;
     display: flex; /* permite centralizar conteúdo se precisares */
     flex-direction: column;
     justify-content: center; /* centra verticalmente */
 }
+
 
 .active{
     padding-bottom: 4px;
@@ -258,8 +259,6 @@ textarea{
     resize: horizontal;
     height: 100px;
 }
-
-
 
 form{
     height: 90%;
@@ -373,18 +372,33 @@ form{
     #p-logo, #spanbar{
     font-size: 1.5rem;
     }
+    #skills h3{
+        font-size: 30px;
+    }
+    #skills h2{
+        font-size: 36px;
+    }
+    #card-mae{
+        flex-direction: column;
+        width: 100%;
+        background-color: #005fcc;
+    }
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    #projectos{
+        
+    }
 }
 
 #skills h2{
-    font-size: 36px;
+        font-size: 32px;
 }
+
     
-#skills h3{
-    font-size: 30px;
-}
-   
 #skills .ling{
-    font-size: 28px;
+    font-size: 24px;
 }
     
 #contactos h2{
@@ -392,8 +406,36 @@ form{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 26px;
 }
 
+#projectos h2{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
 
+#projectos{
+    display: flex;
+    flex-direction: column;
+}
 
+.card{
+    background-color: red;
+    width: 350px;
+    height: 250px;
+    border: 2px solid purple;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#card-mae, #card-mae-irma{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#card-mae-irma{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
